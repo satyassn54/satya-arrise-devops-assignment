@@ -1,0 +1,10 @@
+terraform {
+  backend "s3" {
+    bucket       = "arrise-assignment-satya"
+    key          = "ec2/terraform.tfstate"
+    region       = "ap-south-2"
+    encrypt      = true
+    use_lockfile = true
+
+  }
+}
